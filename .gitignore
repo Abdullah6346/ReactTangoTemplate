@@ -1,0 +1,22 @@
+.DS_Store
+/node_modules/
+
+# React Router
+/.react-router/
+/build/
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# SQLite database
+*.sqlite3
+
+# Node modules
+node_modules/
+
+# Environment files
+.env
+
+# MacOS
+.DS_Store
