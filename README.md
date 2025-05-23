@@ -28,7 +28,7 @@ This project is a modern full stack framework combining a powerful React fronten
 │   │   ├── __pycache__/
 │   │   └── models/
 │   │       ├── __init__.py
-│   │       └── user.py
+│   │       └── welcome.py
 │   └── __pycache__/
 ├── app/                  # React frontend app (TanStack Router)
 │   ├── app.css
