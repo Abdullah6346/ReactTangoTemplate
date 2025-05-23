@@ -3,6 +3,7 @@
 This project is a modern full stack framework combining a powerful React frontend (using TanStack Router) with a robust Django backend. It is designed for rapid development, scalability, and maintainability.
 
 ## Features
+
 - **Frontend:** React with TanStack Router for advanced routing and modern UI development
 - **Backend:** Django for RESTful APIs, authentication, and business logic
 - **TypeScript:** Type safety for frontend code
@@ -10,10 +11,9 @@ This project is a modern full stack framework combining a powerful React fronten
 - **Docker:** Containerized development and deployment
 
 ## Project Structure
+
 ```
 / (root)
-├── .git/
-├── .react-router/
 ├── api/                  # Django backend app
 │   ├── __init__.py
 │   ├── admin.py
@@ -21,20 +21,19 @@ This project is a modern full stack framework combining a powerful React fronten
 │   ├── models.py
 │   ├── urls.py
 │   ├── views.py
-│   └── users/
-│       ├── __init__.py
-│       ├── models/
-│       │   ├── __init__.py
-│       │   └── user.py
-│       ├── urls.py
-│       └── views.py
+│   ├── welcome/
+│   │   ├── __init__.py
+│   │   ├── urls.py
+│   │   ├── views.py
+│   │   ├── __pycache__/
+│   │   └── models/
+│   │       ├── __init__.py
+│   │       └── user.py
+│   └── __pycache__/
 ├── app/                  # React frontend app (TanStack Router)
 │   ├── app.css
 │   ├── root.tsx
 │   ├── routes.ts
-│   ├── models/
-│   │   ├── __init__.py
-│   │   └── user.py
 │   ├── routes/
 │   │   └── home.tsx
 │   └── welcome/
@@ -46,11 +45,13 @@ This project is a modern full stack framework combining a powerful React fronten
 │   ├── asgi.py
 │   ├── settings.py
 │   ├── urls.py
-│   └── wsgi.py
+│   ├── wsgi.py
+│   └── __pycache__/
 ├── public/               # Static assets
 │   └── favicon.ico
 ├── db.sqlite3
 ├── Dockerfile
+├── install.js
 ├── manage.py
 ├── package.json
 ├── pnpm-lock.yaml
@@ -64,35 +65,21 @@ This project is a modern full stack framework combining a powerful React fronten
 ## Getting Started
 
 ### Backend (Django)
+
 1. Install Python dependencies:
    ```sh
    pip install -r requirements.txt
    ```
 
-
 ### Frontend (React + TanStack Router)
+
 1. Install Node dependencies:
    ```sh
    pnpm install
    ```
 
-
-### Simple RUN
-1. Run this:
-   ```sh
-   pnpm run dev
-   ```
-
-
-
-### Docker (optional)
-Build and run the full stack app in containers:
-```sh
-docker build -t my-framework .
-docker run -p 8000:8000 my-framework
-```
-
 ### Install All (Backend + Frontend)
+
 1. Run the installer script (with interactive options):
    ```sh
    node install.js
@@ -101,6 +88,22 @@ docker run -p 8000:8000 my-framework
    - Use `--frontend-only` to install only frontend dependencies
    - Use `--with-venv` to create and use a Python virtual environment
 
+### Simple RUN
+
+1. Run this:
+   ```sh
+   pnpm run dev
+   ```
+
+### Docker (optional)
+
+Build and run the full stack app in containers:
+
+```sh
+docker build -t my-framework .
+docker run -p 8000:8000 my-framework
+```
 
 ## License
+
 MIT
