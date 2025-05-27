@@ -14,7 +14,7 @@ This project is a modern full stack framework combining a powerful React fronten
 
 ```
 / (root)
-├── api/                  # Django backend app
+├── api/                  # Django api
 │   ├── __init__.py
 │   ├── admin.py
 │   ├── apps.py
@@ -30,7 +30,7 @@ This project is a modern full stack framework combining a powerful React fronten
 │   │       ├── __init__.py
 │   │       └── welcome.py
 │   └── __pycache__/
-├── app/                  # React frontend app (TanStack Router)
+├── app/                  # React app (TanStack Router)
 │   ├── app.css
 │   ├── root.tsx
 │   ├── routes.ts
@@ -40,7 +40,7 @@ This project is a modern full stack framework combining a powerful React fronten
 │       ├── logo-dark.svg
 │       ├── logo-light.svg
 │       └── welcome.tsx
-├── config/               # Django project config
+├── config/               # Django config
 │   ├── __init__.py
 │   ├── asgi.py
 │   ├── settings.py
