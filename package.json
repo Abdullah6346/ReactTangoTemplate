@@ -3,9 +3,6 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "install:all": "node install.js",
-    "install:backend": "node install.js --backend-only",
-    "install:frontend": "node install.js --frontend-only",
     "build": "react-router build",
     "dev:frontend": "react-router dev",
     "dev:backend": "python3 manage.py runserver",

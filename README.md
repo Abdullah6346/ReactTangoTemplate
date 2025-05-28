@@ -78,16 +78,6 @@ This project is a modern full stack framework combining a powerful React fronten
    pnpm install
    ```
 
-### Install All (Backend + Frontend)
-
-1. Run the installer script (with interactive options):
-   ```sh
-   node install.js
-   ```
-   - Use `--backend-only` to install only Django dependencies
-   - Use `--frontend-only` to install only frontend dependencies
-   - Use `--with-venv` to create and use a Python virtual environment
-
 ### Simple RUN
 
 1. Run this:
